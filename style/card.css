@@ -8,7 +8,7 @@
     max-width: 400px;
 }
 
-.emergency h1{
+.emergency h1.title {
     position: relative;
     top: -20px;
     font-size: 60px;
@@ -17,7 +17,7 @@
     color: white;
 }
 
-.emergency p.a{
+.emergency p.text {
     position: relative;
     font-size: 25px;
     text-align: center;
@@ -26,7 +26,7 @@
     color: white;
 }
 
-.emergency p.b{
+.emergency p.location{
     position: relative;
     font-size: 20px;
     text-align: left;
@@ -36,7 +36,7 @@
     padding: 20px;
 }
 
-.emergency p.c{
+.emergency p.date{
     position: relative;
     font-size: 20px;
     text-align: left;
@@ -47,7 +47,7 @@
     margin-bottom: -160px;
 }
 
-.emergency p.d{
+.emergency p.author{
     position: relative;
     font-size: 20px;
     text-align: left;

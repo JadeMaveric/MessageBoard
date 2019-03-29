@@ -6,8 +6,10 @@ class Board extends React.Component {
         this.state = {
             cards: [
                 {title: "Hello World", data: "Hey there", id: 0, type: "caution"},
-                {title: "First Comment", data: "By me", id: 0, type: "caution"},
-                {title: "Hello World", data: "Hey there", id: 0, type: "caution", author: "julius"},
+                {title: "First Comment", data: "By me", id: 0, type: "emergency", location: "127, 232"},
+                {title: "First Comment", data: "By me", id: 0, type: "", location: "Goa"},
+                {title: "First Comment", data: "By me", id: 0, type: "emergency"},
+                {title: "Hello World", data: "Hey there", id: 0, type: "emergency", date: "today", author: "julius"},
                 {title: "Hello World", data: "Hey there", id: 0, type: "caution", author: "julius"},
                 {title: "Hello World", data: "Hey there", id: 0, type: "caution", author: "julius"},
                 {title: "Hello World", data: "Hey there", id: 0, type: "caution"},
@@ -50,6 +52,7 @@ class Board extends React.Component {
                     date={card.date}
                     author={card.author}
                     type={card.type}
+                    location={card.location}
                 />
             </li>
             )}
