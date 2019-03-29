@@ -1,7 +1,6 @@
 .emergency {
     background-color: red;
     border-radius: 10px;
-    border-color: black;
     font-family: arial;
     display: flex;
     flex-direction: column;
