@@ -12,7 +12,7 @@ class Button extends React.Component {
 
     render() {
         return(
-            <div id={this.state.type} onClick={this.state.onClick}>{this.state.label}</div>
+            <div className={this.state.type} onClick={this.state.onClick}>{this.state.label}</div>
         )
     }
 }

@@ -21,8 +21,8 @@ class App extends React.Component {
             <div>
                 <div><Board/></div>
                 <div id="button-container">
-                    <Button type="general" label="Add Message" onClick={this.speak.bind(this)}/>
-                    <Button type="emergency" label="Emergency" onClick={this.speak.bind(this)}/>
+                    <Button type="button" label="Add" onClick={this.speak.bind(this)}/>
+                    <Button type="button" label="Emergency" onClick={this.speak.bind(this)}/>
                 </div>
             </div>
         )
