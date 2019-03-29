@@ -24,6 +24,7 @@ class Board extends React.Component {
     }
 
     insertCard(item) {
+        item.id = this.state.cards.length;
         this.state.cards.push(item);
     }
 
