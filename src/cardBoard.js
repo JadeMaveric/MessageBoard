@@ -5,13 +5,13 @@ class Board extends React.Component {
         super(props);
         this.state = {
             cards: [
-                {title: "Hello World", text: "Hey there", id: 0, type: "caution"},
+                {title: "Hello World", text: "Hey there", id: 0, type: "scheme"},
                 {title: "First Comment", text: "By me", id: 0, type: "emergency", location: "127, 232"},
-                {title: "First Comment", text: "By me", id: 0, type: "", location: "Goa"},
-                {title: "First Comment", text: "By me", id: 0, type: "emergency"},
-                {title: "Hello World", text: "Hey there", id: 0, type: "emergency", date: "today", author: "julius"},
-                {title: "Hello World", text: "Hey there", id: 0, type: "caution", author: "julius"},
-                {title: "Hello World", text: "Hey there", id: 0, type: "caution", author: "julius"},
+                {title: "First Comment", text: "By me", id: 0, type: "complaint", location: "Goa"},
+                {title: "First Comment", text: "By me", id: 0, type: "jobs"},
+                {title: "Hello World", text: "Hey there", id: 0, type: "lost", date: "today", author: "julius"},
+                {title: "Hello World", text: "Hey there", id: 0, type: "news", author: "julius"},
+                {title: "Hello World", text: "Hey there", id: 0, type: "schemes", author: "julius"},
                 {title: "Hello World", text: "Hey there", id: 0, type: "caution"},
                 {title: "Hello World", text: "Hey there", id: 0, type: "caution", author: "julius"},
                 {title: "Hello World", text: "Hey there", id: 0, type: "caution"},
