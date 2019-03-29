@@ -1,9 +1,7 @@
 .inactive {
     background-color: #777777;
-    border-radius: 10px;
-    font-family: arial;
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    text-shadow: 0 0 .5px black;
+}
+
+li {
+    list-style-type: none; 
 }
