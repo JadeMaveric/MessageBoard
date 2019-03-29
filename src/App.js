@@ -12,14 +12,18 @@ class App extends React.Component {
     }
 
     speak() {
-        
+        console.log("Hello OW");
+        alert("Hello World!");
     }
 
     render() {
         return(
             <div>
                 <div><Board/></div>
-                <div id="button-container"><Button type="emergency" label="Emergency" onClick={this.speak.bind(this)}/></div>
+                <div id="button-container">
+                    <Button type="general" label="Add Message" onClick={this.speak.bind(this)}/>
+                    <Button type="emergency" label="Emergency" onClick={this.speak.bind(this)}/>
+                </div>
             </div>
         )
     }

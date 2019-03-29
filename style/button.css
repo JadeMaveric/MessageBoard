@@ -3,9 +3,27 @@
     position: fixed;
     z-index: 1;
     bottom: 0;
+    height: 10%;
+    min-width: 100%;
+    padding: 0;
+    margin: 0;
+    max-height: 50px;
+    min-height: 20px;
+    justify-content: center;
+}
+
+#button-container > button {
+    text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 #button-container > #emergency {
     background-color: rgb(196, 49, 49);
+    color: rgb(245, 237, 237);
+}
+
+#button-container > #general {
+    background-color: rgb(163, 231, 136);
     color: rgb(245, 237, 237);
 }
