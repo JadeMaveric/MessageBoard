@@ -1,0 +1,11 @@
+#button-container {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+}
+
+#button-container > #emergency {
+    background-color: rgb(196, 49, 49);
+    color: rgb(245, 237, 237);
+}

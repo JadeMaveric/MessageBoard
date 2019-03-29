@@ -11,9 +11,16 @@ class App extends React.Component {
         }
     }
 
+    speak() {
+        
+    }
+
     render() {
         return(
-            <div><Board/></div>
+            <div>
+                <div><Board/></div>
+                <div id="button-container"><Button type="emergency" label="Emergency" onClick={this.speak.bind(this)}/></div>
+            </div>
         )
     }
 }
