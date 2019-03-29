@@ -44,6 +44,8 @@
     padding: 20px;
     top: -190px;
     margin-bottom: -160px;
+     max-width: 230px;
+
 }
 
 .schemes p.author{
@@ -55,4 +57,5 @@
     padding: 20px;
     top: -80px;
     margin-bottom: -80px;
+    max-width: 230px;
 }

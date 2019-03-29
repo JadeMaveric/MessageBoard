@@ -1,29 +1,18 @@
-#button-container {
-    display: flex;
-    position: fixed;
-    z-index: 1;
-    bottom: 0;
-    height: 10%;
-    min-width: 100%;
-    padding: 0;
-    margin: 0;
+.button{
+  position:relative;
+    background-color: #c0c0c0;
+    border-radius: 10px;
+    color: black;
+    max-width: 90px;
     max-height: 50px;
-    min-height: 20px;
-    justify-content: center;
-}
-
-#button-container > button {
+    padding: 10px;
     text-align: center;
-    padding: 0;
-    margin: 0;
-}
-
-#button-container > #emergency {
-    background-color: rgb(196, 49, 49);
-    color: rgb(245, 237, 237);
-}
-
-#button-container > #general {
-    background-color: rgb(163, 231, 136);
-    color: rgb(245, 237, 237);
+    font-weight:500;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    left: 70%;
+    margin-bottom: -20px;
+    top:-60px;
+    box-shadow: 0 0 10px grey;
 }
