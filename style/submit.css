@@ -12,7 +12,6 @@
   font-size: 20px;
   margin: 4px 2px;
   cursor: pointer;
-  left: 200px;
-  top:-30px;
   box-shadow: 0 0 10px grey;
+   align-self: center;
 }
