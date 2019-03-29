@@ -35,8 +35,16 @@ class Lost extends React.Component {
       return (
         <form onSubmit={this.handleSubmit}>
           <label>
-            Name:
-            <input type="text" value={this.state.value} onChange={this.handleChange} />
+            Item Details:
+            <textarea type="text" value={this.state.text} onChange={this.handleChange} />
+          </label>
+          <label>
+            Finder's Details:
+            <input type="text" value={this.state.contact} onChange={this.handleChange}/>
+          </label>
+          <label>
+            Collect from:
+            <input type="text" value={this.state.text2} onChange={this.handleChange}/>
           </label>
           <input type="submit" value="Submit" />
         </form>
