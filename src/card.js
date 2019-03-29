@@ -13,7 +13,8 @@ class Card extends React.Component {
             date: props.date,
             author: props.author,
             location: props.location,
-            type: props.type
+            type: props.type,
+            salary: props.salary
         };
     }
 

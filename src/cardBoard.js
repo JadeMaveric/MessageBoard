@@ -53,6 +53,7 @@ class Board extends React.Component {
                     author={card.author}
                     type={card.type}
                     location={card.location}
+                    salary={card.salary}
                 />
             </li>
             )}
