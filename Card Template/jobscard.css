@@ -1,0 +1,58 @@
+.jobs {
+    background-color: #1B81DE;
+    border-radius: 10px;
+    font-family: arial;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    text-shadow: 0 0 2px black;
+}
+
+.jobs h1.title {
+    position: relative;
+    top: -20px;
+    font-size: 60px;
+    text-align: center;
+    color: white;
+}
+
+.jobs p.text {
+    position: relative;
+    font-size: 25px;
+    text-align: center;
+    padding: 20px;
+    top: -70px;
+    color: white;
+}
+
+.jobs p.salary{
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+    left: 10px;
+    color: white;
+    top: -140px;
+    padding: 20px;
+}
+
+.jobs p.date{
+    position: relative;
+    font-size: 20px;
+    text-align: left;
+    left: 10px;
+    color: white;
+    padding: 20px;
+    top: -200px;
+    margin-bottom: -160px;
+}
+
+.jobs p.author{
+    position: relative;
+    font-size: 20px;
+    text-align: left;
+    left: 10px;
+    color: white;
+    padding: 20px;
+    top: -90px;
+    margin-bottom: -80px;
+}
