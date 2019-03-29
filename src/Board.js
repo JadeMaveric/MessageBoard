@@ -24,8 +24,11 @@ class Board extends React.Component {
     }
 
     insertCard(item) {
+        console.log(item);
         item.id = this.state.cards.length;
-        this.state.cards.push(item);
+        let cards = [...this.state.cards];
+        cards.push(item);
+        this.setState({cards});
     }
 
     deleteCard(element) {
@@ -40,6 +43,7 @@ class Board extends React.Component {
 
     render() {
         return (
+            <div>
             <ul> {
             this.state.cards.map( (card, index) => 
             <li key={card.id}>
@@ -62,6 +66,10 @@ class Board extends React.Component {
             </li>
             )}
             </ul>
+            <div id="test">
+                <Lost board={this.insertCard.bind(this)} />
+            </div>
+            </div>
         );
     }
 }

@@ -9,6 +9,7 @@ class App extends React.Component {
             loggedin: false,
             user: {name: "", email: "", role: ""}
         }
+        this.board = React.createRef();
     }
 
     speak() {
@@ -19,7 +20,9 @@ class App extends React.Component {
     render() {
         return(
             <div>
-                <div><Board/></div>
+                <div id="board">
+                    <Board ref={this.board} />
+                </div>
                 <div id="button-container">
                     <Button type="button" label="Add" onClick={this.speak.bind(this)}/>
                     <Button type="button" label="Emergency" onClick={this.speak.bind(this)}/>
@@ -28,6 +31,5 @@ class App extends React.Component {
         )
     }
 }
-
 const domContainer = document.querySelector('#app');
 ReactDOM.render(e(App), domContainer);

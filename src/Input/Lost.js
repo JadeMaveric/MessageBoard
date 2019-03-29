@@ -16,14 +16,32 @@ class Lost extends React.Component {
   
     handleChange(event) {
       this.setState({
-          text: event.target.text,
-          contact: event.target.contact,
-          text2: event.target.text2
+          text: event.target.value,
+          contact: event.target.value,
+          text2: event.target.value
         });
+    }
+
+    handleTextChange(event) {
+        this.setState({
+            text: event.target.value
+          });
+    }
+
+    handleContactChange(event) {
+        this.setState({
+            contact: event.target.value
+          });
+    }
+
+    handleText2Change(event) {
+        this.setState({
+            text2: event.target.value
+          });
     }
   
     handleSubmit(event) {
-      board.insertCard({
+      this.state.board({
           text: this.state.text,
           contact: this.state.contact,
           text2: this.state.text2
@@ -36,15 +54,15 @@ class Lost extends React.Component {
         <form onSubmit={this.handleSubmit}>
           <label>
             Item Details:
-            <textarea type="text" value={this.state.text} onChange={this.handleChange} />
+            <textarea type="text" value={this.state.text} onChange={this.handleTextChange.bind(this)} />
           </label>
           <label>
             Finder's Details:
-            <input type="text" value={this.state.contact} onChange={this.handleChange}/>
+            <input type="text" value={this.state.contact} onChange={this.handleContactChange.bind(this)}/>
           </label>
           <label>
             Collect from:
-            <input type="text" value={this.state.text2} onChange={this.handleChange}/>
+            <input type="text" value={this.state.text2} onChange={this.handleText2Change.bind(this)}/>
           </label>
           <input type="submit" value="Submit" />
         </form>
