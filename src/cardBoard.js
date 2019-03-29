@@ -5,22 +5,20 @@ class Board extends React.Component {
         super(props);
         this.state = {
             cards: [
-                {title: "Hello World", text: "Hey there", id: 0, type: "scheme"},
-                {title: "First Comment", text: "By me", id: 0, type: "emergency", location: "127, 232"},
-                {title: "First Comment", text: "By me", id: 0, type: "complaint", location: "Goa"},
-                {title: "First Comment", text: "By me", id: 0, type: "jobs"},
-                {title: "Hello World", text: "Hey there", id: 0, type: "lost", date: "today", author: "julius"},
-                {title: "Hello World", text: "Hey there", id: 0, type: "news", author: "julius"},
-                {title: "Hello World", text: "Hey there", id: 0, type: "schemes", author: "julius"},
-                {title: "Hello World", text: "Hey there", id: 0, type: "caution"},
-                {title: "Hello World", text: "Hey there", id: 0, type: "caution", author: "julius"},
-                {title: "Hello World", text: "Hey there", id: 0, type: "caution"},
-                {title: "Hello World", text: "Hey there", id: 0, type: "caution"},
-                {title: "Hello World", text: "Hey there", id: 0, author: "julius"},
-                {title: "Hello World", text: "Hey there", id: 0},
-                {title: "Hello World", text: "Hey there", id: 0},
-                {title: "Hello World", text: "Hey there", id: 0},
-                {title: "Hello World", text: "Hey there", id: 0}
+                {active: true, title: "Hello World", text: "Hey there", id: 0, type: "scheme"},
+                {active: true, title: "First Comment", text: "By me", id: 0, type: "emergency", location: "127, 232"},
+                {active: true, title: "First Comment", text: "By me", id: 0, type: "complaint", location: "Goa"},
+                {active: true, title: "First Comment", text: "By me", id: 0, type: "jobs"},
+                {active: true, title: "Hello World", text: "Hey there", id: 0, type: "lost", date: "today", author: "julius"},
+                {active: true, title: "Hello World", text: "Hey there", id: 0, type: "news", author: "julius"},
+                {active: true, title: "Hello World", text: "Hey there", id: 0, type: "schemes", author: "julius"},
+                {active: false, title: "Hello World", text: "Hey there", id: 0, type: "scheme"},
+                {active: false, title: "First Comment", text: "By me", id: 0, type: "emergency", location: "127, 232"},
+                {active: false, title: "First Comment", text: "By me", id: 0, type: "complaint", location: "Goa"},
+                {active: false, title: "First Comment", text: "By me", id: 0, type: "jobs"},
+                {active: false, title: "Hello World", text: "Hey there", id: 0, type: "lost", date: "today", author: "julius"},
+                {active: false, title: "Hello World", text: "Hey there", id: 0, type: "news", author: "julius"},
+                {active: false, title: "Hello World", text: "Hey there", id: 0, type: "schemes", author: "julius"},
             ]
         }
     }

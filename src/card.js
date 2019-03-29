@@ -22,7 +22,7 @@ class Card extends React.Component {
 
     render() {
         return (
-            <div className = {this.state.type}>
+            <div className = {this.state.type + ' ' + (this.state.active?'active':'inactive')}>
                 <h1 className = 'title'>{this.state.title}</h1>
                 <p className = 'text'>{this.state.text}</p>
                 <p className = 'location'>{this.state.location}</p>
