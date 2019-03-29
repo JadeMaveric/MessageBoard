@@ -5,20 +5,22 @@ class Board extends React.Component {
         super(props);
         this.state = {
             cards: [
-                {title: "Hello World", data: "Hey there", id: 0, type: "caution"},
-                {title: "First Comment", data: "By me", id: 0, type: "caution"},
-                {title: "Hello World", data: "Hey there", id: 0, type: "caution", author: "julius"},
-                {title: "Hello World", data: "Hey there", id: 0, type: "caution", author: "julius"},
-                {title: "Hello World", data: "Hey there", id: 0, type: "caution", author: "julius"},
-                {title: "Hello World", data: "Hey there", id: 0, type: "caution"},
-                {title: "Hello World", data: "Hey there", id: 0, type: "caution", author: "julius"},
-                {title: "Hello World", data: "Hey there", id: 0, type: "caution"},
-                {title: "Hello World", data: "Hey there", id: 0, type: "caution"},
-                {title: "Hello World", data: "Hey there", id: 0, author: "julius"},
-                {title: "Hello World", data: "Hey there", id: 0},
-                {title: "Hello World", data: "Hey there", id: 0},
-                {title: "Hello World", data: "Hey there", id: 0},
-                {title: "Hello World", data: "Hey there", id: 0}
+                {title: "Hello World", text: "Hey there", id: 0, type: "caution"},
+                {title: "First Comment", text: "By me", id: 0, type: "emergency", location: "127, 232"},
+                {title: "First Comment", text: "By me", id: 0, type: "", location: "Goa"},
+                {title: "First Comment", text: "By me", id: 0, type: "emergency"},
+                {title: "Hello World", text: "Hey there", id: 0, type: "emergency", date: "today", author: "julius"},
+                {title: "Hello World", text: "Hey there", id: 0, type: "caution", author: "julius"},
+                {title: "Hello World", text: "Hey there", id: 0, type: "caution", author: "julius"},
+                {title: "Hello World", text: "Hey there", id: 0, type: "caution"},
+                {title: "Hello World", text: "Hey there", id: 0, type: "caution", author: "julius"},
+                {title: "Hello World", text: "Hey there", id: 0, type: "caution"},
+                {title: "Hello World", text: "Hey there", id: 0, type: "caution"},
+                {title: "Hello World", text: "Hey there", id: 0, author: "julius"},
+                {title: "Hello World", text: "Hey there", id: 0},
+                {title: "Hello World", text: "Hey there", id: 0},
+                {title: "Hello World", text: "Hey there", id: 0},
+                {title: "Hello World", text: "Hey there", id: 0}
             ]
         }
     }
@@ -46,10 +48,14 @@ class Board extends React.Component {
                     priority={card.priority}
                     active={card.active}
                     title={card.title}
-                    data={card.data}
+                    text ={card.text}
+                    text2={card.text2}
+                    text3={card.text3}
                     date={card.date}
                     author={card.author}
                     type={card.type}
+                    location={card.location}
+                    salary={card.salary}
                 />
             </li>
             )}

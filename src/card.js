@@ -9,20 +9,25 @@ class Card extends React.Component {
             active: props.active,
             priority: props.priority,
             title: props.title,
-            data: props.data,
+            text: props.text,   // main text
+            text2: props.text2, // auxillary text
+            text3: props.text3, // less important text (optionals)
             date: props.date,
             author: props.author,
-            type: props.type
+            location: props.location,
+            type: props.type,
+            salary: props.salary
         };
     }
 
     render() {
         return (
             <div className = {this.state.type}>
-                <h4>CARD</h4>
-                <h6>{this.state.title}</h6>
-                <span>{this.state.author}</span>
-                <p>{this.state.data}</p>
+                <h1 className = 'title'>{this.state.title}</h1>
+                <p className = 'text'>{this.state.text}</p>
+                <p className = 'location'>{this.state.location}</p>
+                <p className = 'date'>{this.state.date}</p>
+                <p className = 'author'>{this.state.author}</p>
             </div>
         )
     }
