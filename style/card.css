@@ -1,11 +1,11 @@
 .emergency {
     background-color: red;
     border-radius: 10px;
-    border-color: black;
     font-family: arial;
     display: flex;
     flex-direction: column;
     max-width: 400px;
+    text-shadow: 0 0 2px black;
 }
 
 .emergency h1.title {
@@ -13,7 +13,6 @@
     top: -20px;
     font-size: 60px;
     text-align: center;
-    text-shadow: 0 0 5px black;
     color: white;
 }
 
