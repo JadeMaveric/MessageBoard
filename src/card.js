@@ -6,6 +6,7 @@ class Card extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            id: props.id,
             active: props.active,
             priority: props.priority,
             title: props.title,
@@ -28,6 +29,8 @@ class Card extends React.Component {
                 <p className = 'location'>{this.state.location}</p>
                 <p className = 'date'>{this.state.date}</p>
                 <p className = 'author'>{this.state.author}</p>
+                <button onClick={this.props.deleteCard} value={this.state.id}>
+                Delete</button>
             </div>
         )
     }
