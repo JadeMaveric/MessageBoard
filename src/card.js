@@ -9,7 +9,9 @@ class Card extends React.Component {
             active: props.active,
             priority: props.priority,
             title: props.title,
-            text: props.data,
+            text: props.text,   // main text
+            text2: props.text2, // auxillary text
+            text3: props.text3, // less important text (optionals)
             date: props.date,
             author: props.author,
             location: props.location,
