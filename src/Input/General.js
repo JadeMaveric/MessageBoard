@@ -1,6 +1,6 @@
 'use strict';
 
-class Lost extends InputForm {
+class General extends InputForm {
     constructor(props) {
       super(props);
       this.handleSubmit = this.handleSubmit.bind(this);
@@ -19,25 +19,31 @@ class Lost extends InputForm {
       if(this.state.showPopup) {
         return (
           <div>
-          <button className="general">Lost</button>
+          <button className="general button">Add</button>
           <div className="popup">
             <div className="popup_inner lost">
               <form onSubmit={this.handleSubmit}>
                 <label>
-                  Item Details:
+                  Title:<br/>
+                  <input type="text" value={this.state.title} onChange={this.handleTitleChange} />
+                </label>
+                <br/>
+                <label>
+                  Message:<br/>
                   <textarea type="text" value={this.state.text} onChange={this.handleTextChange} />
                 </label>
                 <br/>
                 <label>
-                  Finder's Details:
-                  <input type="text" value={this.state.contact} onChange={this.handleContactChange}/>
-                </label>
-                <br/>
-                <label>
-                  Collect from:
+                  Details<br/>
                   <input type="text" value={this.state.text2} onChange={this.handleText2Change}/>
                 </label>
                 <br/>
+                <label>
+                  Contact:<br/>
+                  <input type="text" value={this.state.contact} onChange={this.handleContactChange}/>
+                </label>
+                <br/>
+                <button onClick={()=>this.setState({showPopup: false})}>Close</button>
                 <input type="submit" value="Submit" />
               </form>
               </div>
@@ -48,7 +54,7 @@ class Lost extends InputForm {
       else {
         return(
         <div>
-          <button className="general" onClick={()=>this.setState({showPopup: true})}>Lost</button>
+          <button className="general button" onClick={()=>this.setState({showPopup: true})}>Add</button>
         </div>
         );
       }
