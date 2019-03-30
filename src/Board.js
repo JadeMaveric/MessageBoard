@@ -4,6 +4,7 @@ class Board extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            newID: 20,
             cards: [
                 {id: "0", active: true, title: "Hello World", text: "Hey there", type: "schemes"},
                 {id: "1", active: true, title: "First Comment", text: "By me", type: "emergency", location: "127, 232"},
@@ -25,7 +26,8 @@ class Board extends React.Component {
 
     insertCard(item) {
         console.log(item);
-        item.id = this.state.cards.length;
+        item.id = this.state.newID;
+        this.setState({newID: item.id+1});
         let cards = [...this.state.cards];
         cards.push(item);
         this.setState({cards});
