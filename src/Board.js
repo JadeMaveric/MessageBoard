@@ -5,14 +5,14 @@ class Board extends React.Component {
         super(props);
         this.state = {
             cards: [
-                {id: "0", active: true, title: "Hello World", text: "Hey there", type: "scheme"},
+                {id: "0", active: true, title: "Hello World", text: "Hey there", type: "schemes"},
                 {id: "1", active: true, title: "First Comment", text: "By me", type: "emergency", location: "127, 232"},
                 {id: "2", active: true, title: "First Comment", text: "By me", type: "complaint", location: "Goa"},
                 {id: "3", active: true, title: "First Comment", text: "By me", type: "jobs"},
                 {id: "4", active: true, title: "Hello World", text: "Hey there", type: "lost", date: "today", author: "julius"},
                 {id: "5", active: true, title: "Hello World", text: "Hey there", type: "news", author: "julius"},
                 {id: "6", active: true, title: "Hello World", text: "Hey there", type: "schemes", author: "julius"},
-                {id: "7", active: false, title: "Hello World", text: "Hey there", type: "scheme"},
+                {id: "7", active: false, title: "Hello World", text: "Hey there", type: "schemes"},
                 {id: "8", active: false, title: "First Comment", text: "By me", type: "emergency", location: "127, 232"},
                 {id: "9", active: false, title: "First Comment", text: "By me", type: "complaint", location: "Goa"},
                 {id: "10", active: false, title: "First Comment", text: "By me", type: "jobs"},
