@@ -20,7 +20,7 @@ class InputForm extends React.Component {
       this.handleActiveChange = this.handleActiveChange.bind(this);
       this.handlePriorityChange = this.handlePriorityChange.bind(this);
       this.handleTitleChange = this.handleTitleChange.bind(this);
-      this.handContactleChange = this.handContactleChange.bind(this);
+      this.handleContactChange = this.handleContactChange.bind(this);
       this.handleTextChange = this.handleTextChange.bind(this);
       this.handleText2Change = this.handleText2Change.bind(this);
       this.handleText3Change = this.handleText3Change.bind(this);
@@ -46,6 +46,12 @@ class InputForm extends React.Component {
             contact: event.target.value
           });
     }
+
+    handleTitleChange(event) {
+      this.setState({
+          title: event.target.value
+        });
+  }
 
     handleTextChange(event) {
         this.setState({
