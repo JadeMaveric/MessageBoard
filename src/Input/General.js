@@ -19,7 +19,7 @@ class General extends InputForm {
       if(this.state.showPopup) {
         return (
           <div>
-          <button className="general button">Add</button>
+          <button className="general button">Add Message</button>
           <div className="popup">
             <div className="popup_inner lost">
               <form onSubmit={this.handleSubmit}>
@@ -54,7 +54,7 @@ class General extends InputForm {
       else {
         return(
         <div>
-          <button className="general button" onClick={()=>this.setState({showPopup: true})}>Add</button>
+          <button className="general button" onClick={()=>this.setState({showPopup: true})}>Add Message</button>
         </div>
         );
       }

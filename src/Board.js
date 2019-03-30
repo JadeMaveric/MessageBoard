@@ -6,7 +6,7 @@ class Board extends React.Component {
         this.state = {
             newID: 20,
             cards: [
-                {id: "0", active: true, title: "Hello World", text: "Hey there", type: "schemes"},
+                /*{id: "0", active: true, title: "Hello World", text: "Hey there", type: "schemes"},
                 {id: "1", active: true, title: "First Comment", text: "By me", type: "emergency", location: "127, 232"},
                 {id: "2", active: true, title: "First Comment", text: "By me", type: "complaint", location: "Goa"},
                 {id: "3", active: true, title: "First Comment", text: "By me", type: "jobs"},
@@ -20,6 +20,7 @@ class Board extends React.Component {
                 {id: "11", active: false, title: "Hello World", text: "Hey there", type: "lost", date: "today", author: "julius"},
                 {id: "12", active: false, title: "Hello World", text: "Hey there", type: "news", author: "julius"},
                 {id: "13", active: false, title: "Hello World", text: "Hey there", type: "schemes", author: "julius"},
+                */
             ]
         }
     }
