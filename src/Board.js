@@ -41,6 +41,11 @@ class Board extends React.Component {
         console.log("Deleted element at %d", id);
     }
 
+    popupLost() {
+        const popupContainer = document.querySelector("#popup-container");
+        ReactDOM.render(<Lost board={this.insertCard.bind(this)} />, popupContainer);
+    }
+
     render() {
         return (
             <div>

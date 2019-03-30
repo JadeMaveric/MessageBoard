@@ -12,20 +12,11 @@ class App extends React.Component {
         this.board = React.createRef();
     }
 
-    speak() {
-        console.log("Hello OW");
-        alert("Hello World!");
-    }
-
     render() {
         return(
             <div>
                 <div id="board">
                     <Board ref={this.board} />
-                </div>
-                <div id="button-container">
-                    <Button type="button" label="Add" onClick={this.speak.bind(this)}/>
-                    <Button type="button" label="Emergency" onClick={this.speak.bind(this)}/>
                 </div>
             </div>
         )
