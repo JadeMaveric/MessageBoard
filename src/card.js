@@ -24,14 +24,16 @@ class Card extends React.Component {
     render() {
         return (
             <div className = {this.state.type + ' ' + (this.state.active?'active':'inactive') + ' card'}>
-                <h3 className = 'title'>{this.state.title}</h3>
-                <div className = 'text'>{this.state.text}</div>
-                <div className = 'text2'>{this.state.text2}</div>
-                <div className = 'contact'>{this.state.contact}</div>
-                <div className = 'text3'>{this.state.text3}</div>
-                <div className = 'location'>{this.state.location}</div>
-                <div className = 'date'>{this.state.date}</div>
-                <div className = 'author'>{this.state.author}</div>
+                <h2 className = 'title'>{this.state.title}</h2>
+                <ul>
+                    <li className = 'text'>{this.state.text}</li>
+                    <li className = 'author'>{this.state.author}</li>
+                    <li className = 'location'>{this.state.location}</li>
+                    <li className = 'text2'>{this.state.text2}</li>
+                    <li className = 'contact'>{this.state.contact}</li>
+                    <li className = 'text3'>{this.state.text3}</li>
+                    <li className = 'date'>{this.state.date}</li>
+                </ul>
                 <button onClick={this.props.deleteCard} value={this.state.id}>
                 Delete</button>
             </div>

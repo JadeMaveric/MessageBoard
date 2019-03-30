@@ -9,19 +9,15 @@
 }
 
 .emergency .title {
-    position: relative;
-    top: -20px;
-    font-size: 60px;
+    position: absolute;
     text-align: center;
     color: white;
 }
 
 .emergency .text {
-    position: relative;
-    font-size: 25px;
+    position: absolute;
     text-align: center;
     padding: 20px;
-    top: -70px;
     color: white;
 }
 

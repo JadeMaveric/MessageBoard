@@ -44,7 +44,7 @@ class Board extends React.Component {
     render() {
         return (
             <div>
-            <ul> {
+            <ul id="card-container"> {
             this.state.cards.map( (card, index) => 
             <li key={card.id}>
                 <Card
@@ -66,7 +66,7 @@ class Board extends React.Component {
             </li>
             )}
             </ul>
-            <div id="test">
+            <div id="button-container">
                 <Lost board={this.insertCard.bind(this)} />
             </div>
             </div>

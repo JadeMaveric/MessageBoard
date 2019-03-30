@@ -1,53 +1,16 @@
 'use strict';
 
-class Lost extends React.Component {
+class Lost extends InputForm {
     constructor(props) {
       super(props);
-      this.state = {
-          text: '',    //Item Details
-          contact: '', //Finder's Details
-          text2: '',   //Collect from
-          board: props.board //The Card Manager
-        };
-  
-      this.handleChange = this.handleChange.bind(this);
+      this.setState({type: lost});
       this.handleSubmit = this.handleSubmit.bind(this);
     }
   
-    handleChange(event) {
-      this.setState({
-          text: event.target.value,
-          contact: event.target.value,
-          text2: event.target.value
-        });
-    }
-
-    handleTextChange(event) {
-        this.setState({
-            text: event.target.value
-          });
-    }
-
-    handleContactChange(event) {
-        this.setState({
-            contact: event.target.value
-          });
-    }
-
-    handleText2Change(event) {
-        this.setState({
-            text2: event.target.value
-          });
-    }
-  
     handleSubmit(event) {
-      this.state.board({
-          active: true,
-          type: "lost",
-          text: this.state.text,
-          contact: this.state.contact,
-          text2: this.state.text2
-      })
+      const state = this.state;
+      delete state.board
+      this.state.board(state)
       event.preventDefault();
     }
   
@@ -56,15 +19,15 @@ class Lost extends React.Component {
         <form onSubmit={this.handleSubmit}>
           <label>
             Item Details:
-            <textarea type="text" value={this.state.text} onChange={this.handleTextChange.bind(this)} />
+            <textarea type="text" value={this.state.text} onChange={this.handleTextChange} />
           </label>
           <label>
             Finder's Details:
-            <input type="text" value={this.state.contact} onChange={this.handleContactChange.bind(this)}/>
+            <input type="text" value={this.state.contact} onChange={this.handleContactChange}/>
           </label>
           <label>
             Collect from:
-            <input type="text" value={this.state.text2} onChange={this.handleText2Change.bind(this)}/>
+            <input type="text" value={this.state.text2} onChange={this.handleText2Change}/>
           </label>
           <input type="submit" value="Submit" />
         </form>
