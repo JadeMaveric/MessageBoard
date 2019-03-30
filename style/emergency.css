@@ -5,7 +5,12 @@
     display: flex;
     flex-direction: column;
     max-width: 400px;
-    text-shadow: 0 0 2px black;
+    line-height: 1.5;
+    text-shadow: 0 0 .5px black;
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+}
 }
 
 .emergency .title {
