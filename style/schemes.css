@@ -8,7 +8,7 @@
     text-shadow: 0 0 .5px black;
 }
 
-.schemes h1.title {
+.schemes .title {
     position: relative;
     top: -20px;
     font-size: 60px;
@@ -16,7 +16,7 @@
     color: white;
 }
 
-.schemes p.text {
+.schemes .text {
     position: relative;
     font-size: 25px;
     text-align: center;
@@ -25,7 +25,7 @@
     color: white;
 }
 
-.schemes p.location{
+.schemes .location{
     position: relative;
     font-size: 20px;
     text-align: left;
@@ -35,7 +35,7 @@
     padding: 20px;
 }
 
-.schemes p.date{
+.schemes .date{
     position: relative;
     font-size: 20px;
     text-align: left;
@@ -48,7 +48,7 @@
 
 }
 
-.schemes p.author{
+.schemes .author{
     position: relative;
     font-size: 20px;
     text-align: left;

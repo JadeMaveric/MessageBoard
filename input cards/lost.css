@@ -8,7 +8,7 @@
     text-shadow: 0 0 .5px black;
 }
 
-.lost h1.title {
+.lost .title {
     position: relative;
     top: -20px;
     font-size: 60px;
@@ -16,7 +16,7 @@
     color: white;
 }
 
-.lost p.text {
+.lost .text {
     position: relative;
     font-size: 25px;
     text-align: center;
@@ -25,7 +25,7 @@
     color: white;
 }
 
-.lost p.location{
+.lost .location{
     position: relative;
     font-size: 20px;
     text-align: left;
@@ -35,7 +35,7 @@
     padding: 20px;
 }
 
-.lost p.date{
+.lost .date{
     position: relative;
     font-size: 20px;
     text-align: left;
@@ -46,7 +46,7 @@
     margin-bottom: -160px;
 }
 
-.lost p.author{
+.lost .author{
     position: relative;
     font-size: 20px;
     text-align: left;

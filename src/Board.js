@@ -58,9 +58,9 @@ class Board extends React.Component {
                     text3={card.text3}
                     date={card.date}
                     author={card.author}
+                    contact={card.contact}
                     type={card.type}
                     location={card.location}
-                    salary={card.salary}
                     deleteCard={this.deleteCard.bind(this)}
                 />
             </li>

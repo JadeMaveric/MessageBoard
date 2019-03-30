@@ -42,6 +42,8 @@ class Lost extends React.Component {
   
     handleSubmit(event) {
       this.state.board({
+          active: true,
+          type: "lost",
           text: this.state.text,
           contact: this.state.contact,
           text2: this.state.text2

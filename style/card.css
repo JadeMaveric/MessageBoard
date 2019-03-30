@@ -5,3 +5,8 @@
 li {
     list-style-type: none; 
 }
+
+div.card {
+    display: block;
+    min-height: 200px;
+}

@@ -8,7 +8,7 @@
     text-shadow: 0 0 .5px black;
 }
 
-.complaint h1.title {
+.complaint .title {
     position: relative;
     top: -20px;
     font-size: 60px;
@@ -16,7 +16,7 @@
     color: black;
 }
 
-.complaint p.text {
+.complaint .text {
     position: relative;
     font-size: 25px;
     text-align: center;
@@ -25,7 +25,7 @@
     color: black;
 }
 
-.complaint p.location{
+.complaint .location{
     position: relative;
     font-size: 20px;
     text-align: left;
@@ -35,7 +35,7 @@
     padding: 20px;
 }
 
-.complaint p.date{
+.complaint .date{
     position: relative;
     font-size: 20px;
     text-align: left;
@@ -47,7 +47,7 @@
     max-width: 230px;
 }
 
-.complaint p.author{
+.complaint .author{
     position: relative;
     font-size: 20px;
     text-align: left;

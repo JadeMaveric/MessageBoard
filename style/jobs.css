@@ -8,7 +8,7 @@
     text-shadow: 0 0 2px black;
 }
 
-.jobs h1.title {
+.jobs .title {
     position: relative;
     top: -20px;
     font-size: 60px;
@@ -16,7 +16,7 @@
     color: white;
 }
 
-.jobs p.text {
+.jobs .text {
     position: relative;
     font-size: 25px;
     text-align: center;
@@ -25,7 +25,7 @@
     color: white;
 }
 
-.jobs p.salary{
+.jobs .salary{
     position: relative;
     font-size: 30px;
     text-align: center;
@@ -35,7 +35,7 @@
     padding: 20px;
 }
 
-.jobs p.date{
+.jobs .date{
     position: relative;
     font-size: 20px;
     text-align: left;
@@ -47,7 +47,7 @@
      max-width: 230px;
 }
 
-.jobs p.author{
+.jobs .author{
     position: relative;
     font-size: 20px;
     text-align: left;
