@@ -21,7 +21,7 @@ class Emergency extends InputForm {
           <div>
           <button className="emergency-button button">Emergency</button>
           <div className="popup">
-            <div className="popup_inner lost">
+            <div className="popup_inner emergency">
               <form onSubmit={this.handleSubmit}>
                 <label>
                   Title:<br/>
