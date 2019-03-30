@@ -19,7 +19,6 @@ class InputForm extends React.Component {
           board: props.board
         };
       
-      this.setType = this.setType.bind(this);
       this.handleActiveChange = this.handleActiveChange.bind(this);
       this.handlePriorityChange = this.handlePriorityChange.bind(this);
       this.handleTitleChange = this.handleTitleChange.bind(this);
