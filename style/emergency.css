@@ -1,60 +1,14 @@
 .emergency {
     background-color: red;
+    text-align: center;
     border-radius: 10px;
     font-family: arial;
     display: flex;
     flex-direction: column;
+    line-height: 1.5;
     max-width: 400px;
-    text-shadow: 0 0 2px black;
-}
-
-.emergency .title {
-    position: relative;
-    text-align: center;
-    color: white;
-    padding-top: 10px;
-    font-size: 60px;
-}
-
-.emergency .text {
-    position: relative;
-    text-align: center;
+    text-shadow: 0 0 .5px black;
     padding: 20px;
-    color: white;
-    top: -50px;
-}
-
-.emergency .location{
-    position: relative;
     font-size: 20px;
-    text-align: left;
-    left: 10px;
     color: white;
-    top: 1px;
-    padding: 20px;
-}
-
-.emergency .date{
-    position: relative;
-    font-size: 20px;
-    text-align: left;
-    left: 10px;
-    color: white;
-    padding: 20px;
-    top: -190px;
-    margin-bottom: -160px;
-    max-width: 230px;
-}
-
-.emergency .author{
-    position: relative;
-    font-size: 20px;
-    text-align: left;
-    left: 10px;
-    color: white;
-    padding: 20px;
-    top: -80px;
-    margin-bottom: -30px;
-    max-width: 230px;
-
 }
