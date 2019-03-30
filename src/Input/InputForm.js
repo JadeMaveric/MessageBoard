@@ -5,6 +5,7 @@ class InputForm extends React.Component {
       super(props);
       this.state = {
           active: true,
+          showPopup: true,
           priority: 0,
           title: '',
           contact: '',
