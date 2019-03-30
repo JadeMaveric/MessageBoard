@@ -19,7 +19,7 @@ class Emergency extends InputForm {
       if(this.state.showPopup) {
         return (
           <div>
-          <button className="emergency-button button">Emergency</button>
+          <button className="emergency-button button">Add Emergency</button>
           <div className="popup">
             <div className="popup_inner emergency">
               <form onSubmit={this.handleSubmit}>
@@ -45,7 +45,7 @@ class Emergency extends InputForm {
       else {
         return(
         <div>
-          <button className="emergency-button button" onClick={()=>this.setState({showPopup: true})}>Emergency</button>
+          <button className="emergency-button button" onClick={()=>this.setState({showPopup: true})}>Add Emergency</button>
         </div>
         );
       }
