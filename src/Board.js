@@ -72,7 +72,7 @@ class Board extends React.Component {
             )}
             </ul>
             <div id="button-container">
-                <Lost board={this.insertCard.bind(this)} />
+                <General board={this.insertCard.bind(this)} />
             </div>
             </div>
         );
