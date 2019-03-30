@@ -73,6 +73,7 @@ class Board extends React.Component {
             </ul>
             <div id="button-container">
                 <General board={this.insertCard.bind(this)} />
+                <Emergency board={this.insertCard.bind(this)} />
             </div>
             </div>
         );

@@ -1,47 +1,53 @@
 'use strict';
 
-class Emergency extends React.Component{
-    constructor(props){
-        super(props);
-        this.state={
-            title: '', //emergency
-            text: '', //description
-            board: props.board
-        };
-
-        this.handleChange=this.handleChange.bind(this);
-        this.handleChangeSubmit=this.handleChangeSubmit.bind(this);
+class Emergency extends InputForm {
+    constructor(props) {
+      super(props);
+      this.handleSubmit = this.handleSubmit.bind(this);
     }
+  
+    handleSubmit(event) {
+      let st = this.state;
+      st.type = "emergency";
+      this.state.board(this.state);
+      this.setState({showPopup: false});
+      event.preventDefault();
 
-    handleChange(event){
-        this.setState({
-            title: event.target.title,
-            text: event.target.text,
-        });
     }
-
-    handleSubmit(event){
-        board.insertCard({
-            title: this.state.title,
-            text: this.state.text,
-        })
-        event.preventDefault();
-    }
-
-    render(){
+  
+    render() {
+      if(this.state.showPopup) {
+        return (
+          <div>
+          <button className="emergency-button button">Emergency</button>
+          <div className="popup">
+            <div className="popup_inner lost">
+              <form onSubmit={this.handleSubmit}>
+                <label>
+                  Title:<br/>
+                  <input type="text" value={this.state.title} onChange={this.handleTitleChange} />
+                </label>
+                <br/>
+                <label>
+                  Message:<br/>
+                  <textarea type="text" value={this.state.text} onChange={this.handleTextChange} />
+                </label>
+                <br/>
+                <br/>
+                <button onClick={()=>this.setState({showPopup: false})}>Close</button>
+                <input type="submit" value="Submit" />
+              </form>
+              </div>
+          </div>
+          </div>
+          );
+      }
+      else {
         return(
-            <form onSubmit={this.handleSubmit}>
-            <label>
-                Emergency:
-                <textarea type="text" value={this.state.title} onChange={this.handleChange}/>
-            </label>
-            <label>
-                Description:
-                <textarea type="text" value={this.state.text} onchange={this.handleChange}/>
-            </label>
-            <input type="submit" value="Submit"/>
-            </form>
+        <div>
+          <button className="emergency-button button" onClick={()=>this.setState({showPopup: true})}>Emergency</button>
+        </div>
         );
+      }
     }
-
-}
+  }
