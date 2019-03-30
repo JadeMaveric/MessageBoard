@@ -7,7 +7,8 @@ class Lost extends InputForm {
     }
   
     handleSubmit(event) {
-      this.setState({type: "lost"});
+      let st = this.state;
+      st.type = "lost";
       this.state.board(this.state);
       this.setState({showPopup: false});
       event.preventDefault();

@@ -7,6 +7,7 @@ class InputForm extends React.Component {
           active: true,
           showPopup: true,
           priority: 0,
+          type: '',
           title: '',
           contact: '',
           text: '',
@@ -17,7 +18,8 @@ class InputForm extends React.Component {
           location: '',
           board: props.board
         };
-  
+      
+      this.setType = this.setType.bind(this);
       this.handleActiveChange = this.handleActiveChange.bind(this);
       this.handlePriorityChange = this.handlePriorityChange.bind(this);
       this.handleTitleChange = this.handleTitleChange.bind(this);
